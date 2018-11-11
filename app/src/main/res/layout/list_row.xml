@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="NamespaceTypo">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:padding="4dp"
+        android:layout_marginTop="@dimen/margin_top_25"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="4dp"
+            android:paddingBottom="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/ghostWite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1.5"
+                        android:layout_marginLeft="@dimen/padding_normal"
+                        android:layout_marginRight="@dimen/padding_normal">
+
+
+                        <TextView
+                            android:id="@+id/plac"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:fontFamily="@font/mavenpro_bold"
+                            tools:text="@string/defaultname"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                           />
+
+                        <ImageView
+                            android:id="@+id/lst_img"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="80dp"
+                            android:layout_alignParentEnd="true"
+                            tools:src="@drawable/ic_camera" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/padding_normal"
+                        android:layout_marginRight="@dimen/padding_normal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Finish your listing"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/mavenpro_bold"
+                                android:textSize="17sp"
+                                />
+                            <TextView
+                                android:id="@+id/perc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mavenpro_regular"
+                                android:layout_marginTop="5dp"
+                                tools:text="You\'re 40% of the way"
+                                android:textSize="17sp"
+                                />
+
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/mailbut"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/nextt"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+                    <ProgressBar
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progress="40"
+                        android:layout_marginLeft="@dimen/padding_normal"
+                        android:layout_marginRight="@dimen/padding_normal"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/scout_blue_dashboard"
+                        android:max="100"
+                        android:secondaryProgress="80"/>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

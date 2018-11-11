@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostWite"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.muryno.listedkey.Profilefolder.Editprofile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/create_acct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="0dp"
+            card_view:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:elevation="2dp"
+                    android:theme="@style/AppTheme.NoActionBar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="Edit Profile"
+                    android:layout_toRightOf="@id/toolbar"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cameraa"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/ghostWite"
+                    android:layout_marginTop="11dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_right_20"
+                android:layout_marginRight="@dimen/margin_right_20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/user_profile"
+                        android:layout_width="250dp"
+                        android:layout_height="190dp"
+                        android:src="@drawable/ic_user"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:background="@color/grey_500"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_right_20"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:paddingBottom="@dimen/margin_top_25"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            tools:text="Muraino Abiola"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit name"
+                            android:onClick="editName"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/mavenpro_regular"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignBottom="@id/profile_name"
+                            android:textColor="@color/greenColor"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_right_20"
+                        android:background="@color/grey_500"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About me"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"
+                            />
+                        <TextView
+                            android:id="@+id/about_mee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="my story"
+                            android:padding="10dp"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit about me"
+                            android:onClick="editAbout"
+                            android:textSize="17sp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/mavenpro_regular"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignBottom="@id/profile_name"
+                            android:textColor="@color/greenColor"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_right_20"
+                        android:background="@color/grey_500"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private Details "
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:layout_marginBottom="9dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="0dp"
+                        card_view:cardUseCompatPadding="true"
+                        android:padding="@dimen/padding_normal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="gender">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gender "
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:padding="10dp"
+                                    android:layout_alignParentLeft="true" />
+
+                                <TextView
+                                    android:id="@+id/gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/greenColor"
+                                    android:layout_alignParentRight="true"
+                                    tools:text="Male"
+                                    android:padding="10dp"/>
+                                <ImageButton
+                                    android:id="@+id/genbut"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/next_icon"
+                                    android:padding="10dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/white"/>
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/ghostWite"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="getMail">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email "
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:padding="10dp"
+                                    android:layout_alignParentLeft="true" />
+
+                                <TextView
+                                    android:id="@+id/mail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/greenColor"
+                                    android:layout_alignParentRight="true"
+                                    android:padding="10dp"/>
+                                <ImageButton
+                                    android:id="@+id/mailbut"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/next_icon"
+                                    android:padding="10dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/white"/>
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/ghostWite"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="getNumber">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phone "
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:padding="10dp"
+                                    android:layout_alignParentLeft="true" />
+
+                                <TextView
+                                    android:id="@+id/numbr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/greenColor"
+                                    android:layout_alignParentRight="true"
+                                    android:padding="10dp"/>
+                                <ImageButton
+                                    android:id="@+id/phn_but"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/next_icon"
+                                    android:padding="10dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/white"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kitt"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:SpinKit_Color="@color/scout_blue_dashboard" />
+</android.support.constraint.ConstraintLayout>

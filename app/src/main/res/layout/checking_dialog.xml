@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="35dp"
+    tools:context="com.muryno.listedkey.mainui.DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mavenpro_black"
+            android:textSize="25sp"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per night"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mavenpro_black"
+            app:layout_constraintLeft_toRightOf="@id/pric"
+            app:layout_constraintBottom_toBottomOf="@id/pric"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:theme="@style/RatingBar"
+            android:isIndicator="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mavenpro_black"
+            app:layout_constraintLeft_toRightOf="@id/rating"
+            app:layout_constraintBottom_toBottomOf="@id/rating"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <View style="@style/Divider"
+        android:layout_marginTop="@dimen/margin_top_25"
+        android:layout_marginBottom="@dimen/margin_top_25"/>
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mavenpro_black"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            android:text="@string/check_in"/>
+
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/chec_in"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:hint="check in"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/check_in"
+                android:background="@drawable/bg_edit_text_gray"                style="@style/general_edit_text"
+                android:textColorHint="@color/grey_200"
+                android:padding="@dimen/padding_average"
+                android:clickable="false"
+                android:focusable="false"
+                />
+
+
+
+        <TextView
+            android:id="@+id/check_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mavenpro_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:text="@string/check_out"/>
+
+
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/chec_out"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:hint="check in"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/check_out"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/bg_edit_text_gray"                style="@style/general_edit_text"
+                android:textColorHint="@color/grey_200"
+                android:padding="@dimen/padding_average"
+                android:clickable="false"
+                android:focusable="false"
+                />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_25"
+        android:layout_marginBottom="@dimen/margin_right_20">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gues"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <Button
+            android:id="@+id/gst_decrease"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="3dp"
+            android:drawableStart="@drawable/minus"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"
+            android:background="@drawable/circular_button"/>
+        <TextView
+            android:id="@+id/gust_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="40dp"
+            />
+        <Button
+
+            android:id="@+id/gust_increase"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="3dp"
+            android:drawableStart="@drawable/plus"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circular_button"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="50dp"
+
+            >
+            <Button
+                android:id="@+id/chk_avail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book now"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/genera_list_but"
+
+                />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:background="@drawable/genera_list_but"
+                app:SpinKit_Color="@color/white" />
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_right_20"
+            android:layout_marginTop="@dimen/margin_right_20">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="You won't be charged yet"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

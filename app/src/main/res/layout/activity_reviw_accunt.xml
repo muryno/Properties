@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muryno.listedkey.Wallet.ReviwAccunt">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlist"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_right_20"
+            android:layout_marginRight="@dimen/margin_right_20"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/show"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_right_20">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:text="@string/rviw_acct"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bnt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                <TextView
+                    android:id="@+id/bnk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Uba"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:background="@color/grey_500"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc_nm"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                <TextView
+                    android:id="@+id/accnt_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Muraino"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:background="@color/grey_500"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc_num"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:layout_marginBottom="@dimen/margin_bottom_spinner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                <TextView
+                    android:id="@+id/accnt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="30456373"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:background="@color/grey_500"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc_typ"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                <TextView
+                    android:id="@+id/acnt_typ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="savings"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/cnf_accnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Comfirm acount"
+                android:textColor="@color/white"
+                android:background="@drawable/genera_list_but"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/margin_top_25"
+                android:layout_marginBottom="200dp"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

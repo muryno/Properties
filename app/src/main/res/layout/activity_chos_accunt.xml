@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muryno.listedkey.Wallet.ChosAccunt">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlist"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_right_20"
+        android:layout_marginRight="@dimen/margin_right_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/padding_normal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="@string/chs_accnt"/>
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/currency_rbtn">
+
+            <RadioButton
+                android:id="@+id/currnt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                style="@style/MyRadioButtonStyle"
+                android:text="Current"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginRight="@dimen/margin_right_20"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+
+            <RadioButton
+                android:id="@+id/savns"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                style="@style/MyRadioButtonStyle"
+                android:text="Savings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginRight="@dimen/margin_right_20"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+
+
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="150dp"/>
+    </LinearLayout>
+</LinearLayout>

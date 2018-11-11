@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/magin_left_20"
+        android:layout_marginBottom="@dimen/magin_left_20"
+        android:background="@color/divider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Additional Information"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_right_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Check-in:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/Check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Check-out:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/Check_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Arrival Notice:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/Arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Advance Booking:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/Advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Minimum Nights:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Maximum Nights:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_black"
+            android:text="Cancellation:"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/Cancellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Flexible"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:background="@color/divider" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.muryno.listedkey.listingfolder.MapsCirclesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlist"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:layout_marginLeft="@dimen/padding_normal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_bold"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:text="@string/is_pin"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+            <Button
+                android:id="@+id/nextid"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                style="@style/general_button_style"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="@id/map"
+                android:layout_marginRight="@dimen/margin_right_20"/>
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

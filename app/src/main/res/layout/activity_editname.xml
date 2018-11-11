@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muryno.listedkey.Profilefolder.Editname">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/updt_name"
+            style="@style/general_button_style"
+            android:layout_height="50dp"
+            android:text="Update"
+            android:layout_width="110dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/genera_list_but"
+            app:SpinKit_Color="@color/white"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_top_25">
+            <TextView
+                android:id="@+id/frsnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:text="First Name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+               android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                app:layout_constraintTop_toBottomOf="@id/frsnam"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/lstnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="26dp"
+                android:textSize="20sp"
+                android:text="Last Name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/first_name"/>
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+          android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                app:layout_constraintTop_toBottomOf="@id/lstnam"
+                android:layout_marginTop="5dp"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

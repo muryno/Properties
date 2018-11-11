@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muryno.listedkey.Profilefolder.VerificatonsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlist"
+     />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/show"
+            android:padding="@dimen/margin_normal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mavenpro_bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="General"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:textSize="17sp"
+                    android:text="Phone number"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView
+                    android:id="@+id/phn_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yes"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:text="Email address"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    />
+                <ImageView
+                    android:id="@+id/eml_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yes"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/verify_email" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:text="Selfie capture"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView
+                    android:id="@+id/slfcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:text="Government Id"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView
+                    android:id="@+id/gvmt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/mavenpro_bold"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:textColor="@color/black"
+                android:text="Host"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:textSize="17sp"
+                    android:text="Bank details"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    />
+                <ImageView
+                    android:id="@+id/bnk_vrf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mavenpro_regular"
+                    android:textSize="17sp"
+                    android:text="Driver's licence"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView
+                    android:id="@+id/driv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:background="@color/grey_500"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+apply plugin: 'com.android.application'
+apply plugin: "net.ltgt.apt"
+
+android {
+    signingConfigs {
+        Listedkeysconfig {
+            keyAlias 'Listedkeys'
+            keyPassword 'abeola80'
+            storeFile file('C:/Android Project/Listedkey/Listedkeys.jks')
+            storePassword 'abeola800'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.muryno.listedkey"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+    }
+    productFlavors {
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+
+dependencies {
+    def paging_version = "1.0.1"
+    def view_model_version = "1.1.0"
+    def support_version = "28.0.0"
+    def glide = "4.8.0"
+    def room = "1.1.1"
+    def Butterknife = "8.8.1"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:cardview-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //pager
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+    //Room - Sqlite Wrapper
+    implementation "android.arch.persistence.room:runtime:$room"
+    annotationProcessor "android.arch.persistence.room:compiler:$room"
+    implementation "android.arch.lifecycle:extensions:$room"
+
+    //  implementation 'com.google.code.gson:gson:2.8.2'
+
+    //country code phonenumber checker
+    implementation 'com.hbb20:ccp:2.1.2'
+    implementation 'net.rimoto:intlphoneinput:1.0.1'
+
+    //Butterknife - Bind Views
+    implementation "com.jakewharton:butterknife:$Butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$Butterknife"
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide"
+
+    //adding paging
+    implementation "android.arch.paging:runtime:$paging_version"
+
+//peesistence cookies
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    //dagger
+    implementation 'com.google.dagger:dagger:2.15'
+    implementation 'com.google.dagger:dagger-android:2.15'
+    implementation 'com.google.dagger:dagger-android-support:2.14.1'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.14.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
+
+    //multi index
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Network
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //Retofit and Gson
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //rx java
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    implementation 'com.jakewharton.timber:timber:4.6.1'
+
+
+    annotationProcessor 'com.ryanharter.auto.value:auto-value-gson:0.8.0'
+    implementation 'com.ryanharter.auto.value:auto-value-gson-annotations:0.8.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //auto valu
+
+    implementation 'com.google.auto.value:auto-value-annotations:1.6.2'
+    annotationProcessor 'com.google.auto.value:auto-value:1.6.2'
+
+    // Circular Profile ImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //calender
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
+
+    //calender
+
+    //    gallery
+    implementation 'com.github.jrvansuita:PickImage:2.2.3'
+
+    //google
+
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-drive:16.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.37.0'
+
+    //Progress bar
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+
+    //bottomsheet dialog
+    implementation 'com.github.javiersantos:BottomDialogs:1.2.1'
+
+    //google map
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+
+    //place map
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+    //paystack
+    implementation 'co.paystack.android:paystack:3.0.10'
+
+    //toast
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    //custom view
+    implementation 'com.an.customfontview:customfont:0.1.0'
+
+    //searchable
+    implementation 'com.github.mirrajabi:search-dialog:1.2.3'
+
+}
+apply plugin: 'com.google.gms.google-services'

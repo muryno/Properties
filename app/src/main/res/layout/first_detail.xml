@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_right_20"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/titl_pro"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_bold"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            tools:text="Mountain paradise"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_of_view_user"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/profile"
+            app:layout_constraintRight_toRightOf="parent"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="20dp"
+            app:civ_border_color="@color/white"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/contry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/scout_blue_dashboard"
+        tools:text="Nigeria"
+        android:textSize="17sp"
+        />
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_right_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/guest"
+                android:layout_marginEnd="7dp"/>
+            <TextView
+                android:id="@+id/gust_nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1 guest"
+                android:layout_marginEnd="80dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notification" />
+
+            <TextView
+                android:id="@+id/bed_rom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                tools:text="1 bedroom"
+                android:layout_marginEnd="20dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bath"
+                android:layout_marginEnd="7dp"/>
+            <TextView
+                android:id="@+id/batrm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1 private bath"
+                android:layout_marginEnd="45dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bed" />
+
+            <TextView
+                android:id="@+id/bed_nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                tools:text="1 bed"
+                android:layout_marginEnd="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_25"
+        android:layout_marginBottom="@dimen/margin_right_20"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

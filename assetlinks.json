@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.muryno.listedkey",
+    "sha256_cert_fingerprints":
+    ["5A:3B:AE:F3:47:06:16:FD:71:71:19:34:D4:93:D5:75:3D:A7:A8:5C:02:C5:FB:52:08:69:74:C5:ED:18:48:DF"]
+  }
+}]

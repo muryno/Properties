@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scout_blue_dashboard"
+    tools:context="com.muryno.listedkey.AuthAtivities.Login">
+
+    <include
+        android:id="@+id/log_in"
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/scout_blue_dashboard"
+        android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="44dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:layout_marginLeft="@dimen/magin_left_20"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mavenpro_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:text="@string/action_sign_in_short"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:text="@string/Email"
+            android:textStyle="normal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/generaEditBox"
+                android:id="@+id/loginEmail"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:backgroundTint="@color/white"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:text="@string/password"
+            android:textStyle="normal" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                style="@style/generaEditBox"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:freezesText="true"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:singleLine="true" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgtpas"
+            android:textColor="@color/white"
+            android:onClick="forgtPaswrd"
+            android:fontFamily="@font/mavenpro_bold"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="150dp"
+            android:textSize="15sp"/>
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Sign In"
+            android:textColor="@color/scout_blue_dashboard"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/genera_but"
+
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/login"
+            android:background="@drawable/genera_but"
+            app:SpinKit_Color="@color/scout_blue_dashboard" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

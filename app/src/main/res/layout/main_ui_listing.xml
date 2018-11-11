@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.muryno.listedkey.model.MainLst" />
+        <variable
+            name="main"
+            type="com.muryno.listedkey.model.MainLst" />
+    </data>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="7dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/maincont"
+        card_view:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lis_imag"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+
+                    app:layout_collapseMode="parallax" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingB"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:isIndicator="true"
+                        android:numStars="1"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:stepSize="0.1" />
+
+                    <TextView
+                        android:id="@+id/ratnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/mavenpro_bold"
+                        tools:text="9.1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bed" />
+
+                    <TextView
+                        android:id="@+id/bedid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/mavenpro_bold"
+                        tools:text="10"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/proptype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/mavenpro_bold"
+                    tools:text="SPA N HOTEL"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/gws_color_material_grey_500" />
+
+                <TextView
+                    android:id="@+id/propnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/mavenpro_bold"
+                    tools:text="Banana Island"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/scout_blue_dashboard"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/proploc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    tools:text="Nigeria"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</layout>

@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.muryno.listedkey",
+    "sha256_cert_fingerprints":
+    ["68:E6:62:EC:2B:A8:99:80:33:E4:0A:DD:22:6C:E6:A1:B7:D1:A8:8E:37:AF:25:47:73:BA:DA:3A:E3:D8:9A:C2"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://aegecae.mybako.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.muryno.listedkey",
+    "sha256_cert_fingerprints":
+    ["68:E6:62:EC:2B:A8:99:80:33:E4:0A:DD:22:6C:E6:A1:B7:D1:A8:8E:37:AF:25:47:73:BA:DA:3A:E3:D8:9A:C2"]
+  }
+}]

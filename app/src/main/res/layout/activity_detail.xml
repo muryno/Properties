@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeContainer"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muryno.listedkey.mainui.DetailActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginStart="72dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_alignParentTop="true" />
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="bottom"
+                            android:padding="10dip"
+                            app:centered="true"
+                            app:fillColor="#df0623"
+                            app:pageColor="#fff"
+                            app:snap="false" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/scrim"
+                        android:fitsSystemWindows="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/scrim"/>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/anim_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        app:fabSize="normal"
+                        android:elevation="6dp"
+                        android:src="@drawable/fab_plus"
+                        app:pressedTranslationZ="12dp"/>
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:nestedScrollingEnabled="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_right_20"
+                    android:orientation="vertical">
+
+
+                    <include
+                        layout="@layout/first_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <include
+                        layout="@layout/secnd_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"/>
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginBottom="@dimen/margin_right_20"
+                        class="com.google.android.gms.maps.SupportMapFragment" />
+
+                    <include
+                        layout="@layout/thir_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"/>
+
+                    <include
+                        layout="@layout/fout_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"/>
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="16dp">
+            <Button
+                android:id="@+id/chk_avail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Check Availability"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/genera_list_but"
+
+                />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Wave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:background="@drawable/genr_bokn_dial"
+                app:SpinKit_Color="@color/white" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

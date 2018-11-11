@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/magin_left_20"
+        android:background="@color/divider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Amenities"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Essentials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Essential"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Shampoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shampoo"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Conditioning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Conditioning"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Closet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Closet/Drawers"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/FirePlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FirePlace"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/hairDryer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair Dryer"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Entrances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private Entrance"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Wireless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wireless Internet"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Hanger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hanger"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Heater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heater"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Desk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desk/Workspace"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Iron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iron"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Pet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Safety"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Extinguisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fire Extinguisher"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Smoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoke Detector"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lock on bedroom door"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Aid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Aid Kit"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safety Card"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/monoxide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbon monoxide detector"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/magin_left_20"
+        android:layout_marginBottom="@dimen/magin_left_20"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/beach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near the beach"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Isolated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isolated"
+                    android:layout_marginStart="1dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/town"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="At the town center"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/ski"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near the ski center"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Near"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near the forest"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/ghostWite"
+                    tools:ignore="RtlSymmetry" />
+                <TextView
+                    android:id="@+id/Private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private Island"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginStart="1dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

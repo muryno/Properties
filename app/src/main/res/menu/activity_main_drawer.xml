@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/user"
+            android:title="Profile " />
+
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/messag"
+            android:title="Inbox" />
+
+
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/ic_notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_listing"
+            android:icon="@drawable/ic_home"
+            android:title="Become a host" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_gethelp"
+            android:icon="@drawable/information"
+            android:title="Get help" />
+
+        <item
+            android:id="@+id/nav_survey"
+            android:icon="@drawable/survey"
+            android:title="Give us feed back" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muryno.listedkey.AuthAtivities.AuthActivity"
+    android:background="@color/scout_blue_dashboard"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        android:textSize="22dp"
+        android:onClick="signIn"
+        android:fontFamily="@font/mavenpro_bold"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Properties"
+        app:layout_constraintBottom_toBottomOf="@id/my_bako"
+        android:fontFamily="@font/mavenpro_bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/my_bako"/>
+    <Button
+        android:onClick="signup"
+        style="@style/allBlueButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/create_account"
+        android:textColor="@color/scout_blue_dashboard"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/googleloginButton"
+        android:background="@drawable/button_login"/>
+
+    <Button
+        android:id="@+id/googleloginButton"
+        style="@style/allBlueButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="googleSinIn"
+        android:layout_margin="@dimen/margin_normal"
+        android:drawableStart="@drawable/google"
+        android:paddingEnd="40dp"
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/margin_normal"
+        android:text="@string/google_sign_in"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button_radius"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/facebooklogin"
+        style="@style/allBlueButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/facebook"
+        android:paddingStart="20dp"
+        android:paddingEnd="39dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/fbok"
+        android:background="@drawable/button_radius"
+        app:layout_constraintTop_toBottomOf="@id/googleloginButton"/>
+
+
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/facebooklogin"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/term_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/trm_one"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/term_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/term_one"
+            app:layout_constraintStart_toStartOf="@id/term_one"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/term_two"/>
+        <TextView
+            android:id="@+id/term_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/term_two"
+            app:layout_constraintStart_toEndOf="@id/term_two"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:onClick="user_agreem"
+            android:textSize="15sp"
+            android:text="@string/term_three" />
+        <TextView
+            android:id="@+id/term_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/term_three"
+            app:layout_constraintStart_toEndOf="@id/term_three"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:textSize="15sp"
+            android:onClick="term_servic"
+            android:text="@string/term_four"
+            />
+        <TextView
+            android:id="@+id/term_fiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/term_two"
+            app:layout_constraintStart_toStartOf="@id/term_two"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:textSize="15sp"
+            android:onClick="payment"
+            android:text="@string/term_five"
+        />
+        <TextView
+            android:id="@+id/term_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/term_fiv"
+            app:layout_constraintStart_toEndOf="@id/term_fiv"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:textSize="15sp"
+            android:text="and"/>
+        <TextView
+            android:id="@+id/term_sevn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/term_six"
+            app:layout_constraintStart_toEndOf="@id/term_six"
+            android:textColor="@color/white"
+            android:layout_marginStart="3dp"
+            android:textSize="15sp"
+            android:onClick="priv_policy"
+            android:text="@string/term_sevn" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

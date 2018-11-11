@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Properties</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="create_account">Create Account</string>
+    <string name="Listedkey"> Logo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="facebook">Continue with Facebook</string>
+
+    <string name="First">FIRST NAME</string>
+    <string name="lastname">LAST NAME</string>
+    <string name="Email">EMAIL ADDRESS</string>
+    <string name="password">PASSWORD</string>
+    <string name="Reg">Registration process</string>
+
+
+    <string name="google_map_api">AIzaSyCgb6hM0eIFatPQdnqwHrlkggAVa4rghX0</string>
+
+    <string name="facebook_app_id">1744702042306404</string>
+    <string name="fb_login_protocol_scheme">fb1744702042306404</string>
+
+
+    <!--Spinner Options-->
+
+
+    <string-array name="currency">
+        <item>Naira</item>
+        <item>USD</item>
+
+    </string-array>
+
+    <string-array name="space_array">
+        <item>None</item>
+        <item>Apartment</item>
+        <item>House</item>
+        <item>Hostel</item>
+        <item>Hotel</item>
+    </string-array>
+
+    <string-array name="room_type_array">
+        <item>Apartment</item>
+        <item>Family room</item>
+        <item>Double room</item>
+    </string-array>
+
+    <string-array name="hw_ofn_yu_hv_gust">
+        <item>As often as possible</item>
+        <item>Part-time</item>
+        <item>I\'m not sure yet</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="advn_notic_array">
+        <item>Same day</item>
+        <item>At least 1 day notice</item>
+        <item>At least 2 days\'s notice</item>
+        <item>At least 3 days\'s notice</item>
+        <item>At least 7 days\'s notice</item>
+    </string-array>
+
+    <string-array name="resrv_req_array">
+        <item>Any time</item>
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>9 months</item>
+        <item>1 year</item>
+
+    </string-array>
+
+    <string-array name="rented_befr">
+        <item>I\'m new to this</item>
+        <item>I have</item>
+    </string-array>
+
+    <string-array name="futr_resrv_array">
+        <item>Date unavailable by default</item>
+        <item>3 months into the future</item>
+        <item>6 months into the future</item>
+        <item>9 months into the future</item>
+        <item>12 months into the future</item>
+        <item>All future dates</item>
+    </string-array>
+
+    <string-array name="after_arriv">
+        <item>Flexible</item>
+        <item>8AM</item>
+        <item>9AM</item>
+        <item>10AM</item>
+        <item>11AM</item>
+        <item>12PM(noon)</item>
+        <item>1PM</item>
+        <item>2PM</item>
+        <item>3PM</item>
+        <item>4PM</item>
+        <item>5PM</item>
+        <item>6PM</item>
+        <item>7PM</item>
+        <item>8PM</item>
+        <item>9PM</item>
+        <item>10PM</item>
+        <item>11PM</item>
+        <item>12Am(midnight)</item>
+        <item>1AM(next day)</item>
+    </string-array>
+    <string-array name="befor_arriv">
+        <item>Flexible</item>
+        <item>9AM</item>
+        <item>10AM</item>
+        <item>11AM</item>
+        <item>12PM(noon)</item>
+        <item>1PM</item>
+        <item>2PM</item>
+        <item>3PM</item>
+        <item>4PM</item>
+        <item>5PM</item>
+        <item>6PM</item>
+        <item>7PM</item>
+        <item>8PM</item>
+        <item>9PM</item>
+        <item>10PM</item>
+        <item>11PM</item>
+        <item>12Am(midnight)</item>
+        <item>1AM(next day)</item>
+        <item>2AM(next day)</item>
+    </string-array>
+
+    <string-array name="leav_befor">
+        <item>At least 24Hours</item>
+        <item>At least 48Hours</item>
+        <item>2AM</item>
+        <item>3AM</item>
+        <item>4AM</item>
+        <item>5AM</item>
+        <item>6AM</item>
+
+    </string-array>
+
+    <string-array name="bank">
+        <item>Access Bank</item>
+        <item>Citibank</item>
+        <item>Coronation Merchant Bank</item>
+        <item>Diamond Bank</item>
+        <item>Ecobank Nigeria</item>
+        <item>Enterprise Bank Limited</item>
+        <item>FBN Holdings Plc</item>
+        <item>FBN Merchant Bank</item>
+        <item>FCMB Group Plc</item>
+        <item>Fidelity Bank Nigeria</item>
+        <item>First Bank of Nigeria</item>
+        <item>First City Monument Bank</item>
+        <item>FSDH Merchant Bank</item>
+        <item>Guaranty Trust Bank</item>
+        <item>Heritage Bank Plc</item>
+        <item>Jaiz Bank Limited</item>
+        <item>Keystone Bank Limited</item>
+        <item>Providusbank plc</item>
+        <item>Rand Merchant Bank</item>
+        <item>Skye Bank</item>
+        <item>Stanbic IBTC Bank Nigeria</item>
+        <item>Standard Chartered Bank</item>
+        <item>Sterling Bank</item>
+        <item>Suntrust Bank Nigeria Limited</item>
+        <item>Stanbic IBTC Holding Plc </item>
+        <item>Union Bank of Nigeria</item>
+        <item>United Bank for Africa</item>
+        <item>Unity Bank Plc</item>
+        <item>Wema Bank</item>
+        <item>Zenith Bank</item>
+
+    </string-array>
+
+
+    <string name="prompt_email">example@mail.com</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password should be at least 8 character long</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="reg">By tapping Register, you agree to our User Agreement.</string>
+    <string name="forgtpas">Forgot Password?</string>
+    <string name="search_label">Location</string>
+    <string name="search_hint">search</string>
+    <string name="search">Location</string>
+    <string name="start">How will you like to start?</string>
+    <string name="create_list">Create new</string>
+    <string name="defaultname">Enter Place</string>
+    <string name="existing">Existing listing</string>
+    <string name="gettingStarted">  What kind of place are you listing?</string>
+    <string name="property_title">Property title</string>
+    <string name="select_title">select title</string>
+    <string name="space">space</string>
+    <string name="object">object type space</string>
+    <string name="describe">Describe your space</string>
+    <string name="guess_to_stay">How many guests can stay?</string>
+    <string name="total_guess">Total guests</string>
+    <string name="room_type">Room type</string>
+    <string name="room_number">Room number</string>
+    <string name="rooms">How many rooms</string>
+    <string name="kind_of_bed">What kind of beds are there?</string>
+    <string name="bed_number">Beds number</string>
+    <string name="bed_type">Type of beds</string>
+    <string name="add_bed">Add beds</string>
+    <string name="commomspace">Common space</string>
+    <string name="min_stay">Minimum stay</string>
+    <string name="place_location">Where\'s your place located?</string>
+    <string name="country">Country/Region</string>
+    <string name="naija">Select Listing Country</string>
+    <string name="street">Location on map</string>
+    <string name="street_add">e.g. 123 Kingston St.</string>
+    <string name="apt">Apt., Suite (optional)</string>
+    <string name="city">City</string>
+    <string name="city_ex">e.g. Lagos</string>
+    <string name="state">State</string>
+    <string name="stat">e.g. Lagos</string>
+    <string name="Zip_cod">Zip / Postal code</string>
+    <string name="zi">e.g. 11012</string>
+    <string name="ready_photo">Are you ready to add photos?</string>
+    <string name="guest_speech">Guests love photos.They use it to imagine themselves at your place. Do you have time now to take them</string>
+    <string name="add_photo">Add photos now</string>
+    <string name="skip">Skip for now</string>
+    <string name="verify">Verified info</string>
+    <string name="address_path">https://aegecae.mybako.com/api/</string>
+    <string name="caption">Caption</string>
+
+
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+    <string name="about_message">      Listed Key is built  on relationship, Help other people get to know you \n \n
+
+          Tell them about the things you like share your favourite travel destination,books,movie,shows,music,food</string>
+    <string name="comfrm_numb">This is so that host or guests can contact you during a trip, and Listedkeys knows how to contact you.</string>
+    <string name="requst">How much notice do you need before a guest arrives?</string>
+    <string name="reserv">How long can guest cancel booking</string>
+    <string name="futr_rerv">How far into the future can guests book?</string>
+    <string name="rentdbf">Have you rented your space before?</string>
+    <string name="hw_of_to_hv_gus">How often do you want to have guests?</string>
+    <string name="specl_fr_gus">Something special for your guests</string>
+    <string name="frt_thre">The first 3 guests(so you can get 3 reviews and your star rating) who book your home will get 20% off their stay</string>
+    <string name="off">Offer 20% off to your first guests</string>
+    <string name="dnt_add">Don\'t add a special offer</string>
+    <string name="publ">Once you publish your listing,you won\'t be able to add this offer.</string>
+    <string name="bas">Base price</string>
+    <string name="baspric">Your base price is your default nightly rate.</string>
+    <string name="create_new_listing">Create new Listing</string>
+    <string name="verify_email">verify email</string>
+    <string name="ltvry_emil">Let\'s verify your email</string>
+    <string name="thnk_fr_su">Thank you for signing up.</string>
+    <string name="snt_mail">An email has been sent to you with a verification link. Kindly click on the \nlink to activate your account.</string>
+    <string name="mail_saf">Your ID will not be shared with anyone</string>
+    <string name="ltvry_number">Let\'s verify your phone number</string>
+    <string name="jst_tw_stp">Just two more steps to go</string>
+    <string name="opn_phn">Kindly input your phone number below to the verification code.</string>
+    <string name="comf_num_ver">Input verification code</string>
+    <string name="stp_to_g">Just two more step to go</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://aegecae.mybako.com\",\n  }\n}]</string>
+    <string name="is_pin">Is the pin in the right place?</string>
+    <string name="chs_to_getpaid">Choose how to get paid</string>
+    <string name="bnk_trans">Bank Transfer</string>
+    <string name="gt_paid">Get paid in 5-7 working dayss</string>
+    <string name="chs_accnt">Choose your account type</string>
+    <string name="eml_ver">Email verification</string>
+    <string name="ver_suc">Verfication successful.</string>
+    <string name="add_inf">Add account info</string>
+    <string name="accnt_hodr">Select your bank</string>
+    <string name="acc_nm">Account holder name</string>
+    <string name="acc_num">Account number</string>
+    <string name="cm_acc_num">Confirm account number</string>
+    <string name="rviw_acct">Review account details</string>
+    <string name="bnt">Bank</string>
+    <string name="acc_typ">Account type</string>
+    <string name="add_ID">Let\'s add your ID</string>
+    <string name="ID_saf">We\'ll  keep your ID safe.</string>
+    <string name="gvnt_id">A government ID helps us check that you\'re really you. It also helps us keep Listedkeys secure , fight fraud, and more.</string>
+    <string name="add_phots">After adding a photo of your ID. we\'ll then quickly match the picture in your ID with \na new selfie photo you\'ll take  of yourself.</string>
+    <string name="int_ps">International Passport</string>
+    <string name="natn_id">National ID Card</string>
+    <string name="drv_lic">Driver\'s License</string>
+    <string name="vts_crd">Voter\'s Card</string>
+    <string name="add_proper">Let\'s know more about your space</string>
+    <string name="prop_typ">Property type</string>
+    <string name="narro">Let\'s narrow things down</string>
+    <string name="rviw_spac">Review your trip details</string>
+    <string name="hig_fr_spac">Highlights for your stay</string>
+    <string name="yu_acknw">You also acknowledge.</string>
+    <string name="sinc_yr_frs">Since it is your first trip on Listedkeys.</string>
+    <string name="str_addr">Full address</string>
+    <string name="description">About this listing</string>
+    <string name="btroom">How many bathrooms</string>
+    <string name="toil">How many toilet</string>
+    <string name="rviw_trp">Review and pay</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="gues">Guests</string>
+    <string name="py_wt">Pay with</string>
+    <string name="curncy"><![CDATA[NGN & USD]]></string>
+    <string name="add_crd_info">Add card details</string>
+    <string name="crd_numbr">Card number</string>
+    <string name="expr">Expiry</string>
+    <string name="vr_detl">Let\'s verify your details</string>
+    <string name="det_saf">We\'ll keep your personal details safe.</string>
+    <string name="det_ver">This helps us check that you\'re really you. It also helps us keep Listedkeys secure, fight , fraud , and more.</string>
+    <string name="bnk_detls">Bank Details</string>
+    <string name="drv_licen">Driver\'s License</string>
+    <string name="locl_law">Local laws</string>
+    <string name="lo_lw">  Please educate yourself about the laws in your jurisdiction before listing your space.</string>
+    <string name="frg_pass">Get new password</string>
+    <string name="new_pass">ENTER NEW PASSWORD</string>
+    <string name="comfrm_pass">Confirm request </string>
+    <string name="chk_mai">Kindly click on the Link or input Token sent to your email  </string>
+
+    <string name="retry">RETRY</string>
+    <string name="error_msg">Sorry! couldnt fetch data</string>
+    <string name="btn_retry">Retry</string>
+    <string name="trm_one">By tapping Continue, Create Account, I agree to</string>
+    <string name="term_two">Listedkeys</string>
+    <string name="term_three">User Agreement ,</string>
+    <string name="term_four">Terms of Service,</string>
+    <string name="term_five">Payment,</string>
+    <string name="term_sevn">Privacy Policy.</string>
+    <string name="lo_lw2">Most locations or estates have rules covering homesharing, and the specific codes and numbers can appear in many places (such as house number, zoning, building, licensing or tax codes).</string>
+    <string name="lo_lw3">In most locations or estates, you must register, get a permit, or obtain a license before you list your property or accept guests. You may also be responsible for collecting and remitting certain taxes. In some places, short-term rentals could be prohibited altogether</string>
+    <string name="lo_lw5">Since you are responsible for your own decision to list or book, you should get comfortable with the applicable rules before listing on Listedkeys.</string>
+    <string name="review_rules_policies"><![CDATA[Review Rules & Policies]]></string>
+    <string name="mesagHost">Send your host a message</string>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muryno.listedkey.Profilefolder.EditAboutMe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:onClick="nextActivity"
+        android:background="@color/ghostWite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/done"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="16dp"
+            android:src="@drawable/done"
+            android:background="@color/ghostWite"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_right_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit about me"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/abt_me"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/general_edit_text"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/about_message"
+            android:layout_marginTop="@dimen/margin_right_20"
+            />
+
+    </LinearLayout>
+</LinearLayout>

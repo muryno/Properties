@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scout_blue_dashboard"
+    tools:context="com.muryno.listedkey.AuthAtivities.Signup">
+
+    <include
+        android:id="@+id/sign_up"
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/scout_blue_dashboard"
+        android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="44dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_normal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mavenpro_bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/Reg"/>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="@string/First"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editloginfirstname"
+                style="@style/generaEditBox"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:backgroundTint="@color/white"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:text="@string/lastname"
+            android:textStyle="normal" />
+
+                 <!-- Login progress -->
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editsignuplastname"
+                style="@style/generaEditBox"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:backgroundTint="@color/white"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:text="@string/Email"
+            android:textStyle="normal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                style="@style/generaEditBox"
+                android:inputType="textEmailAddress|textAutoCorrect"
+                android:maxLines="1"
+                android:backgroundTint="@color/white"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:text="@string/password"
+            android:textStyle="normal" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/generaEditBox"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/white"
+                    android:freezesText="true"
+                    android:clickable="true"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/show_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The chosen password is "
+                        android:textColor="@color/white"
+                        android:layout_marginRight="2dp"
+                        android:visibility="gone"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:id="@+id/password_strength" />
+                </LinearLayout>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+                android:layout_marginTop="40dp"
+                >
+
+                <Switch
+                    android:id="@+id/SwitchID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginRight="6dp"
+                    android:theme="@style/SwitchTheme"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2.0"
+                    android:text="@string/reg"
+                    android:textColor="@color/white"
+                    android:onClick="switchToggle"
+                    android:layout_marginRight="8dp"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/registration"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="Register"
+                    android:textColor="@color/scout_blue_dashboard"
+                    android:textSize="15dp"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/genera_but"
+
+                    />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Wave"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="@id/registration"
+                    android:background="@drawable/genera_but"
+                    app:SpinKit_Color="@color/scout_blue_dashboard"
+                    />
+            </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

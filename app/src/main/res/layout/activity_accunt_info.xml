@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muryno.listedkey.Wallet.AccuntInfo">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlist"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_right_20"
+            android:layout_marginRight="@dimen/margin_right_20"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/show"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_right_20">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:text="@string/add_inf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_right_20"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accnt_hodr"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+
+
+                <Spinner
+                    android:id="@+id/bank"
+                    style="@style/FormTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:drawSelectorOnTop="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey_500"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc_nm"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                <EditText
+                    android:id="@+id/acc_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/general_edit_text"
+
+                    android:hint="First Last"
+
+                  />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc_num"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:layout_marginBottom="@dimen/margin_bottom_spinner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                <EditText
+                    android:id="@+id/accunt_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g 3022211221"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cm_acc_num"
+                    android:layout_marginTop="@dimen/margin_right_20"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                <EditText
+                    android:id="@+id/cmf_accnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g 3022211221"
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/next_pg"
+                android:layout_marginTop="@dimen/margin_top_25"
+                android:layout_marginBottom="200dp"
+                style="@style/general_button_style"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

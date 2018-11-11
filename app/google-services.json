@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "847672783642",
+    "firebase_url": "https://listedkey.firebaseio.com",
+    "project_id": "listedkey",
+    "storage_bucket": "listedkey.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847672783642:android:7fc19e0546967125",
+        "android_client_info": {
+          "package_name": "com.muryno.listedkey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847672783642-77p818krpqfuis5u323ll4g8jpeod0g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muryno.listedkey",
+            "certificate_hash": "3991d2affae614f86ccb3435b5b1d1cdffd39523"
+          }
+        },
+        {
+          "client_id": "847672783642-pqpc3pjvdr1c307uqsvgrqfqg90o82jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muryno.listedkey",
+            "certificate_hash": "cd266b1c9f81d90201801ac55977717b8123ddac"
+          }
+        },
+        {
+          "client_id": "847672783642-k4j3ptuskpvb7blg5f70v8vs81akgfis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8o2F-aDmsGuODNwq5YowoA1W1z3mSb7g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847672783642-k4j3ptuskpvb7blg5f70v8vs81akgfis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
